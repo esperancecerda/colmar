@@ -7,31 +7,39 @@
     <link rel="stylesheet" type="text/css" href="./resources/css/style.css">
   </head>
   <body>
-
-    <!--header and nav section-->
+  <!--header and nav section-->
     <header>
-      <div class="flex">
-        <div class="colmaracademy">
+      <div class="flex container">
+        <div class="colmaracademy ">
+          <div class="logo">
+          <img src="./resources/images/ic-logo.svg" alt="colmar academy logo, a stylized lion">
           <span class="colmar">COLMAR</span>
           <span class="academy">ACADEMY</span>
         </div>
         <nav>
-          <ul>
+          <ul class="desktop nav">
             <li><a href="#">On campus</a></li>
             <li><a href="#">Online</a></li>
             <li><a href="#">For companies</a></li>
             <li><a href="#">Sign in</a></li>
           </ul>
+          <!--mobile nav-->
+          <ul class="mobile nav">
+            <li><a href="#"><img src="./resources/images/ic-on-campus.svg" alt="on campus icon"></a></li>
+            <li><a href="#"><img src="./resources/images/ic-online.svg" alt="computer icon"></a></li>
+            <li><a href="#"><img src="./resources/images/ic-login.svg" alt="person icon"></a></li>
+          </ul>
         </nav>
+        </div>
       </div>
     </header>
 
     <!--SECTION 1 LEARNING SOMETHING NEW EVERYDAY-->
-  <div class="flex">
-    <div class="image">
-      <img src="./resources/images/banner.jpg" alt="three students at a picnic table reading books and taking notes">
+  <div class="flex container section1">
+    <div class="image subcontainer-left">
+      <img id="banner" src="./resources/images/banner.jpg" alt="three students at a picnic table reading books and taking notes">
     </div>
-    <div class="textcontent">
+    <div class="textcontent subcontainer-right">
       <h1>Learn something new everyday</h1>
       <h3>Regebat sese potestate efferens quam urbem quidem crebros.</h3>
       <p class="button">Start here</p>
@@ -40,8 +48,8 @@
 
   <!--SECTION 2 Doesnt hurt to practice-->
   <!-- left side of screen -->
-<div class="flex">
-  <div class="information-main">
+<div class="flex container section2">
+  <div class="information-main subcontainer-left">
     <div class="information-image">
       <img src="./resources/images/information-main.jpg" alt="man reading outside in the fall">
     </div>
@@ -56,7 +64,7 @@
   </div> <!--end of information-main-->
 
   <!-- right side of screen-->
-  <div class="flex information-more">
+  <div class="flex information-more subcontainer-right">
 <!--orientation-->
     <div class="orientation">
       <div class="image orientation">
@@ -103,9 +111,9 @@
 </div><!--end flex conatainer at start of section 2-->
 
 <!--Section 3 start learning courses-->
-<div class="featured-courses">
+<div class="container featured-courses">
   <h2>Start learning</h2>
-  <div class="image-grid">
+  <div id="course-grid" class="image-grid">
       <div class="course software">
         <img src="./resources/images/course-software.jpg" alt="computer monitors displaying code">
         <h4 class="name">Software Engineering</h4>
@@ -146,12 +154,13 @@
 </div><!--end of featured-courses-->
 
 <!--Section 4 start Thesis exhibit-->
-<div class="flex thesis">
+ <div class="container projects">
   <h2>Thesis exhibit</h2>
+  <div class="flex thesis">
   <!--left side-->
-  <div class="thesis-left">
+  <div class="thesis-left subcontainer-left">
     <div class="thesis reimagine">
-      <video src="./resources/video/thesis.mp4" autoplay controls type="video.mp4"></video>
+      <video id="vid" src="./resources/video/thesis.mp4" autoplay controls type="video.mp4"></video>
     </div>
     <div class="thesis text">
       <h2>Reimagine Urban</h2>
@@ -162,7 +171,7 @@
     </div>
   </div><!--end of thesis left-->
 <!--right side-->
-<div class="thesis-right">
+<div class="thesis-right subcontainer-right">
   <div class="thesis fisma">
     <div class="image fisma">
       <img src="./resources/images/thesis-fisma.jpg" alt="view from above person working at cluttered desk">
@@ -178,20 +187,20 @@
     </div>
     <div class="thesis info">
       <h3 class="thesis-name">Now and then</h3>
-      <p class="thesis-description">Research study abbout New York</p>
+      <p class="thesis-description">Research study about New York</p>
     </div>
   </div>
 </div> <!-- end of thesis right-->
 </div><!--end of flex thesis-->
-
+</div><!--end of projects-->
 <!--Footer-->
-<footer>
+<footer class="container">
   <div class="copyright">
-    <span>2016 Colmar Academy. Allrights reservef</span>
+    <span>2016 Colmar Academy. Allrights reserved</span>
   </div>
   <div class="disclamer">
     <span>Terms</span>
-    <span>Privacy</span>  
+    <span>Privacy</span>
   </div>
 </footer>
   </body>

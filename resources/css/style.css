@@ -1,0 +1,139 @@
+html  {
+  font-size: 16px;
+  font-family: "Helvetica", sans-serif;
+}
+div, nav {
+  border: 1px solid red;
+}
+
+body {
+  text-align: center;
+  width:100%;
+  height: 100%
+  padding: 0px;
+  margin: 0px;
+  overflow-x: hidden;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  max-width: 100%;
+}
+.subcontainer-left {
+  max-width: 60%;
+}
+.subcontainer-right {
+  max-width: 40%;
+}
+
+
+
+/* header, nav*/
+.colmaracademy {
+  height: 4rem;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+  background-color: white;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+}
+.nav li{
+  display: inline-block;
+  padding-right: 1rem;
+  padding: 1rem 1rem 1rem 0;
+}
+.nav li:last-child {
+  padding-right:1.5rem;
+}
+.colmaracademy .logo {
+  font-size: 2rem;
+  padding-left: 1.5rem;
+}
+.mobile.nav {
+  display: none;
+}
+.colmaracademy .logo img {
+  margin: auto;
+}
+@media only screen and (max-width: 760px){
+  .desktop.nav {
+    display: none;
+  }
+  .mobile.nav {
+    display: inline;
+  }
+  .colmar,.academy {
+    display: none;
+  }
+
+}
+
+/*section 1*/
+.section1{
+  padding-top: 4rem;
+}
+.image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: gray;
+  margin: auto;
+}
+img, video{
+  max-width: 100%;
+  object-fit: cover;
+}
+
+/*section 2*/
+.campus-mobile,
+.orientation-mobile,
+.guest-mobile {
+  display: none;
+}
+.flex.information-more {
+  flex-direction: column;
+}
+.info.orientation,
+.info.campus,
+.info.guest {
+  display: block;
+}
+.orientation, .campus, .guest {
+  display: flex;
+  justify-content: center
+}
+/*section 3*/
+.image-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin: 1rem 2.5rem;
+}
+.course {
+  width: 20.66rem;
+  margin: 1rem 2rem;
+}
+.course img {
+  width: 20rem;
+  height: auto;
+}
+/*section 4*/
+.thesis {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.thesis.info {
+  display: block;
+}
