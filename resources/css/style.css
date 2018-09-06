@@ -2,9 +2,9 @@ html  {
   font-size: 16px;
   font-family: "Helvetica", sans-serif;
 }
-div, nav {
+/*div, nav {
   border: 1px solid red;
-}
+}*/
 
 body {
   text-align: center;
@@ -28,6 +28,14 @@ body {
 }
 .subcontainer-right {
   max-width: 40%;
+}
+@media only screen and (max-width: 760px){
+  .subcontainer-left {
+    max-width: 100%;
+  }
+  .subcontainer-right {
+    max-width: 100%;
+  }
 }
 
 img, video{
@@ -63,6 +71,14 @@ p {
   justify-content: space-between;
   display: flex;
 }
+
+.branding {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  padding-left: 1.5rem;
+}
 .nav li{
   display: inline-block;
   padding-right: 1rem;
@@ -71,16 +87,13 @@ p {
 .nav li:last-child {
   padding-right:1.5rem;
 }
-.colmaracademy .logo {
-  font-size: 2rem;
-  padding-left: 1.5rem;
-}
+
 .mobile.nav {
   display: none;
 }
-.colmaracademy .logo img {
+.branding .logo img {
   margin: auto;
-  width: 2rem;
+  width: 3rem;
 }
 @media only screen and (max-width: 760px){
   .desktop.nav {
@@ -89,7 +102,7 @@ p {
   .mobile.nav {
     display: inline;
   }
-  .colmar,.academy {
+  .institution {
     display: none;
   }
 }
@@ -110,6 +123,7 @@ p {
 }
 #starthere {
   text-align: center;
+
 }
 .textcontent h3 {
   margin-top: 2rem;
@@ -120,11 +134,29 @@ p {
 }
 .textcontent {
   display: flex;
- flex-direction: column;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
+@media only screen and (max-width: 760px){
+  .section1{
+    display: block;
+  }
+  .banner {
+    margin: 0;
+  }
+  .textcontent {
+    margin: 2rem 1rem;
+  }
+  .textcontent h3 {
+    margin: 2rem 0 1.5rem 0;
+  }
+  #starthere {
+    width: 100%;
+    padding:1rem 0;
+  }
 
+}
 /*section 2*/
 
 .section2{
@@ -184,6 +216,35 @@ p {
   color: blue;
 }
 
+@media only screen and (max-width: 760px){
+  .information-main {
+    display: none;
+  }
+  .campus-mobile,
+  .orientation-mobile,
+  .guest-mobile {
+    display: block;
+  }
+  .image.orientation,
+  .image.campus,
+  .image.guest{
+    display: none;
+  }
+  .flex.information-more {
+    display:block;
+  }
+  .Orientation, .Campus, .Guest{
+  display: block;
+  margin-top: 2rem;
+  }
+  .Orientation {
+    margin-top: 4rem;
+  }
+  .Guest {
+    margin-bottom: 2rem;
+  }
+}
+
 /*section 3*/
 .image-grid {
   display: flex;
@@ -194,19 +255,48 @@ p {
   margin: 0rem 4.5rem;
 }
 .course {
-  max-width: 20.66rem;
+  max-width: 20rem;
   margin: 1rem 2rem;
 }
 .course-img{
   height: auto;
 }
-.course-info{
+.course-info {
   text-align: left;
+  margin: 2rem 0 1.5rem 2rem;
 }
 .featured-courses h2 {
   margin: 2rem 0;
 }
 
+
+@media only screen and (max-width: 760px){
+  .course-img, .course-info p{
+    display: none;
+  }
+  .image-grid {
+    display: block;
+    margin: 0;
+  }
+  .course {
+    max-width: 100%;
+    margin: 0;
+  }
+  .course-info{
+    margin: 0;
+  }
+  .course-info h4 {
+    background-color: lightgray;
+    padding: 1rem 0 1.5rem 1rem;
+    margin: .25rem 1rem;
+  }
+  .featured-courses h2 {
+    margin: 2rem 0 1rem 0;
+  }
+  .featured-courses {
+    margin-bottom: 2rem;
+  }
+}
 /*section 4*/
 
 .thesis {
@@ -242,6 +332,18 @@ p {
   margin-top: 1rem;
 }
 
+@media only screen and (max-width: 760px){
+  .thesis-right, .thesis.text{
+    display:none;
+  }
+  .reimagine {
+    margin: 0 0 1.5rem 0;
+  }
+  .exhibit {
+    margin: 2rem 0 1rem 0;
+  }
+}
+
 /* footer*/
 .footer {
   justify-content: space-between;
@@ -250,4 +352,14 @@ p {
 }
 .footer span{
   font-size: .75rem;
+}
+@media only screen and (max-width: 760px){
+  .disclaimer {
+    display: none;
+  }
+  .footer {
+    display: block;
+    margin: 1rem 0 1rem 1rem;
+    text-align: left;
+  }
 }
